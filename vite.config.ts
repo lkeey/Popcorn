@@ -1,9 +1,7 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
-// GitHub Pages project site: https://<user>.github.io/<repo>/
-// Поменяйте '/Popcorn/', если репозиторий называется иначе.
-const pagesBase = '/Popcorn/'
-
-export default defineConfig(({ command }) => ({
-  base: command === 'build' ? pagesBase : '/',
-}))
+export default defineConfig({
+  plugins: [react()],
+  base: "/Popcorn",
+});
