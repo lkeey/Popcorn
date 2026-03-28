@@ -1,10 +1,15 @@
 # Build Vite project and deploy dist/ to GitHub Pages
+# Сборка через Bun — обход бага npm на GitHub Actions: «Exit handler never called»
 name: Deploy static content to Pages
 
 on:
   push:
     branches: ['main']
   workflow_dispatch:
+
+# Новые раннеры: JS-действия на Node 24 (см. changelog GitHub Actions)
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 permissions:
   contents: read
@@ -24,22 +29,26 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup Node
-        uses: actions/setup-node@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
         with:
-          # Node 22 LTS: меньше сбоев npm, чем на 24 + npm ci ("Exit handler never called")
-          node-version: '22'
-          cache: 'npm'
+          bun-version: '1.2.5'
+
       - name: Install dependencies
-        run: npm install --no-audit --fund=false
+        run: bun install
+
       - name: Build
-        run: npm run build
+        run: bun run build
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: './dist'
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
