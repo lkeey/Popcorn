@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Попкорн: история, наука, виды зёрен, производство, кино и экономика зала, вкусы по миру, хранение и калории — плюс интерактив при скролле."
+    />
+    <title>Попкорн — от зёрна до зала: виды, вкусы, кино и советы</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Unbounded:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="parallax-root" aria-hidden="true">
+      <div class="parallax-base"></div>
+      <div
+        class="parallax-layer parallax-layer--deep"
+        data-parallax-depth="0.045"
+        data-parallax-mouse="10"
+      ></div>
+      <div
+        class="parallax-layer parallax-layer--mid"
+        data-parallax-depth="0.11"
+        data-parallax-mouse="18"
+      ></div>
+      <div
+        class="parallax-layer parallax-layer--front"
+        data-parallax-depth="0.2"
+        data-parallax-mouse="26"
+      ></div>
+    </div>
+    <div class="noise" aria-hidden="true"></div>
+    <div id="popcorn-layer" class="popcorn-layer" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="site-header__row">
+        <a href="#top" class="logo logo--shimmer"
+          >POP<span class="logo-dot">.</span>CORN</a
+        >
+        <nav class="site-nav" aria-label="Основная навигация">
+          <ul class="site-nav__list">
+            <li><a href="#top" class="site-nav__link">Главная</a></li>
+            <li><a href="#facts" class="site-nav__link">Факты</a></li>
+            <li><a href="#varieties" class="site-nav__link">Виды</a></li>
+            <li><a href="#how-its-made" class="site-nav__link">Как делают</a></li>
+            <li><a href="#cinema" class="site-nav__link">Кино</a></li>
+            <li><a href="#flavors" class="site-nav__link">Вкусы</a></li>
+            <li><a href="#tips" class="site-nav__link">Советы</a></li>
+            <li><a href="#gallery" class="site-nav__link">Галерея</a></li>
+            <li><a href="#sources" class="site-nav__link">Источники</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="read-progress" aria-hidden="true">
+        <div class="read-progress__bar" id="read-progress-bar"></div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero reveal" id="top">
+        <p class="hero-kicker">Древний снек · наука · кино</p>
+        <h1 class="hero-title">
+          Взрыв на <span class="gradient-text">весь экран</span>
+        </h1>
+        <p class="hero-lead">
+          Одна из самых старых закусок Америки — и идеальный повод добавить немного
+          театральности в обычный скролл.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#gallery">В галерею</a>
+          <button type="button" class="btn btn-ghost" id="demo-burst" aria-label="Показать эффект попкорна">
+            Залп попкорна
+          </button>
+        </div>
+        <div class="hero-badge">
+          <span aria-hidden="true">🍿</span>
+          Лопает с тысячелетиями
+        </div>
+      </section>
+
+      <section class="section facts" id="facts">
+        <h2 class="section-title reveal">Факты, которые хрустят</h2>
+        <div class="cards">
+          <article class="card glass reveal">
+            <span class="card-icon" aria-hidden="true">🏜️</span>
+            <h3>Древность</h3>
+            <p>
+              Находки в пещере Bat Cave в Нью-Мексико: зёрна возрастом порядка четырёх тысяч
+              лет, часть которых всё ещё могла «выстреливать». В Перу есть свидетельства
+              попкорна тысячи лет назад.
+            </p>
+          </article>
+          <article class="card glass reveal">
+            <span class="card-icon" aria-hidden="true">🌋</span>
+            <h3>Наука</h3>
+            <p>
+              Зёрно — мини-скороварка: влага 14–20% превращается в пар, давление рвёт оболочку,
+              крахмал распухает в пену. Объём может вырасти в десятки раз — отсюда характерный
+              «поп».
+            </p>
+          </article>
+          <article class="card glass reveal">
+            <span class="card-icon" aria-hidden="true">🎭</span>
+            <h3>Культура</h3>
+            <p>
+              У ацтеков попкорн был в церемониях и украшениях. Есть слово вроде
+              <em>totopoca</em> — «звук лопающегося зерна». Ранние летописцы описывали
+              попкорн в Мезоамерике и Южной Америке.
+            </p>
+          </article>
+          <article class="card glass reveal">
+            <span class="card-icon" aria-hidden="true">🎬</span>
+            <h3>Современность</h3>
+            <p>
+              Мобильные аппараты появились в 1880-х (Чикаго, Charles Cretors), а кино
+              сделало попкорн символом зала. Когда-то им даже завтракали — как крупу, только
+              веселее.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section varieties" id="varieties">
+        <h2 class="section-title reveal">Виды и формы</h2>
+        <p class="section-sub reveal">
+          Тексты обобщают распространённые описания из отраслевых и популярных источников:
+          форма «взрыва» сильно влияет на то, во что потом превращают попкорн на кухне и в
+          цеху.
+        </p>
+        <div class="cards cards--feature">
+          <article class="card glass reveal card--wide">
+            <span class="card-icon" aria-hidden="true">🦋</span>
+            <h3>Бабочка (snowflake)</h3>
+            <p>
+              Неправильная хрупкая форма с «крыльями» — лучше держит масло, специи и сухие
+              приправы. Лёгкий, воздушный, хрустящий: самая узнаваемая текстура кинотеатра и
+              домашней сковороды.
+            </p>
+          </article>
+          <article class="card glass reveal card--wide">
+            <span class="card-icon" aria-hidden="true">🍄</span>
+            <h3>Грибовидный (mushroom)</h3>
+            <p>
+              Плотный шар с закруглённой шляпкой — выдерживает тяжёлые глазури без
+              крошения: карамель, шоколад, сырные пыльцы, глазированные смеси и конфеты на
+              палочке.
+            </p>
+          </article>
+        </div>
+        <div class="cards cards--compact">
+          <article class="card glass card--small reveal">
+            <h3>Жёлтое зерно</h3>
+            <p>Самый частый «театральный» вариант: крупное, привычное, удобное для массового попа.</p>
+          </article>
+          <article class="card glass card--small reveal">
+            <h3>Белое зерно</h3>
+            <p>
+              Часто мельче и нежнее; после лопания даёт светлый, почти «снежный» вид и мягкий
+              вкус.
+            </p>
+          </article>
+          <article class="card glass card--small reveal">
+            <h3>Цветные зёрна</h3>
+            <p>
+              Красные, синие, фиолетовые оболочки — декоративны до лопания; сам взорванный
+              попкорн обычно светлый, а отличия чаще в хрусте и аромате сорта.
+            </p>
+          </article>
+          <article class="card glass card--small reveal">
+            <h3>Hulless и ladyfinger</h3>
+            <p>
+              Сорта с менее навязчивой оболочкой и мелким зерном — удобны тем, кто раздражён
+              кожурой, и для нежных покрытий.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section how-made" id="how-its-made">
+        <h2 class="section-title reveal">Как получают попкорн</h2>
+        <p class="section-sub reveal">
+          Промышленность и домашняя кухня используют одну идею: влага внутри зерна превращается
+          в пар и рвёт перикарп. Ниже — обобщённая цепочка по материалам открытых статей и
+          энциклопедий.
+        </p>
+        <div class="prose glass reveal">
+          <p>
+            Речь почти всегда о кукурузе подвида <strong><em>Zea mays everta</em></strong>:
+            жёсткая оболочка удерживает давление до «хлопка». Сырьё очищают и доводят влажность
+            до рабочего окна — порядка <strong>13–20%</strong> в зависимости от метода и
+            линии.
+          </p>
+          <ul class="prose-list">
+            <li>
+              <strong>Воздушный поп.</strong> Нагретый воздух циркулирует в камере или барабане;
+              масло на этапе взрыва не обязательно — проще потом тонко настроить соль, масло и
+              ароматизаторы.
+            </li>
+            <li>
+              <strong>Котёл и сковорода.</strong> Тепло через жир или масло — быстрый домашний
+              и уличный классик; вкус насыщеннее, калорийность выше.
+            </li>
+            <li>
+              <strong>Микроволновые пакеты.</strong> Внутри — зерно и жир/ароматизаторы; часто
+              есть <strong>сусцептор</strong> (поглощает СВЧ и греется как контактная
+              подложка). На заводах влажность зерна подгоняют под режим, встречают ориентиры
+              вроде <strong>13–14%</strong> для микроволновой трассы.
+            </li>
+            <li>
+              <strong>Завод.</strong> Несколько линий (часто часы непрерывной работы),
+              мониторинг влаги, соли, текстуры и стабильности партии.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section cinema" id="cinema">
+        <h2 class="section-title reveal">Попкорн и кино</h2>
+        <p class="section-sub reveal">
+          Закуска в зале давно перестала быть «дополнением к билету»: из разных источников про
+          киноиндустрию повторяют мысль, что напитки и бар часто приносят кинотеатру львиную
+          долю маржи по сравнению с одной только кассой.
+        </p>
+        <div class="cards">
+          <article class="card glass reveal">
+            <span class="card-icon" aria-hidden="true">🎟️</span>
+            <h3>Билет и бар</h3>
+            <p>
+              Попкорн и напитки продают с наценкой за удобство и опыт; точные проценты варьируют
+              по сетям и странам, но образ «зарабатывают на попкорне» укоренился именно из‑за
+              этой структуры доходов.
+            </p>
+          </article>
+          <article class="card glass reveal">
+            <span class="card-icon" aria-hidden="true">📉</span>
+            <h3>Великая депрессия</h3>
+            <p>
+              В США в 1930‑е попкорн оставался относительно доступным удовольствием на фоне
+              тягот: дешёвый снек в зале и на улице закрепил привычку «сходить в кино и взять
+              ведёрко» — часть популярных исторических очерков связывает это с устойчивым спросом.
+            </p>
+          </article>
+          <article class="card glass reveal">
+            <span class="card-icon" aria-hidden="true">🥤</span>
+            <h3>Сегодня в зале</h3>
+            <p>
+              Форматы подорожали, но связка «сеанс + что‑то хрустящее» остаётся маркетинговым
+              якорем: комбо, сезоны вкусов и коллекционные стаканы — способ удержать гостя у
+              концессии, а не только у экрана.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section flavors" id="flavors">
+        <h2 class="section-title reveal">По миру и по вкусу</h2>
+        <p class="section-sub reveal">
+          Вкусовые традиции смешиваются с глобальной розницей — ниже не полный атлас, а
+          ориентиры, с чем часто сталкиваются путешественники и любители пакетированных миксов.
+        </p>
+        <div class="cards cards--compact">
+          <article class="card glass card--small reveal">
+            <h3>Kettle corn</h3>
+            <p>
+              Сладко‑солёный профиль с открытых палаток и ярмарок в США — взбитый сахар и соль
+              на горячем масле дают характерную корочку.
+            </p>
+          </article>
+          <article class="card glass card--small reveal">
+            <h3>Чили и лайм</h3>
+            <p>
+              В Латинской Америке и на уличной еде часто щедро сыплют копчёный перец, лайм и
+              сырные пудры — кислинка балансирует жир.
+            </p>
+          </article>
+          <article class="card glass card--small reveal">
+            <h3>Азия</h3>
+            <p>
+              В рознице встречаются карамель‑молоко, васаби, «морской» умами, сладкие зёрна с
+              сирупами — локальные линейки копируют привычные снеки региона.
+            </p>
+          </article>
+          <article class="card glass card--small reveal">
+            <h3>Европа</h3>
+            <p>
+              Сладкие глазури и десертные миксы соседствуют с привычным солёным «кино» вариантом;
+              чаще меньше размер порции, больше акцент на аромате.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section tips" id="tips">
+        <h2 class="section-title reveal">Свежесть, польза и мифы</h2>
+        <p class="section-sub reveal">
+          Короткий ликбез без медицинских обещаний: что происходит с зерном после лопа и как не
+          попасться на бытовые заблуждения.
+        </p>
+        <div class="cards">
+          <article class="card glass reveal">
+            <span class="card-icon" aria-hidden="true">🫙</span>
+            <h3>Почему черствеет</h3>
+            <p>
+              После взрыва крахмал и влага в пене перестраиваются: при контакте с воздухом вкус
+              «плоский», текстура жёстче. Храните в плотно закрытом контейнере, далеко от плиты и
+              света; добавляйте масло и соль уже перед едой, если нужна хрусткая свежесть.
+            </p>
+          </article>
+          <article class="card glass reveal">
+            <span class="card-icon" aria-hidden="true">🌾</span>
+            <h3>О питании</h3>
+            <p>
+              Сам по себе воздушный попкорн — цельное зерно с клетчаткой; калорий немного. Другое
+              дело масло, карамель и глазури: они многократно меняют энергетическую ценность —
+              смотрите этикетку готовой смеси.
+            </p>
+          </article>
+          <article class="card glass reveal">
+            <span class="card-icon" aria-hidden="true">🔍</span>
+            <h3>Мифы</h3>
+            <p>
+              «Хлоп» — не магия ГМО, а биология сорта <em>Zea mays everta</em> и режима влаги.
+              Чистый попкорн без добавок традиционно относят к безглютеновым зёрнам; следите за
+              следами глютена в ароматизированных пакетах и на перерабатывающем оборудовании.
+            </p>
+          </article>
+        </div>
+        <div class="prose glass reveal prose--tight">
+          <h3 class="prose-heading">Знаете ли</h3>
+          <ul class="prose-list prose-list--plain">
+            <li>
+              В США <strong>19 января</strong> часто отмечают как National Popcorn Day — повод для
+              акций у производителей и залов.
+            </li>
+            <li>
+              Не вся кукуруза на початке «стреляет»: коммерческий попкорн — от особых сортов с
+              нужными свойствами оболочки и эндосперма.
+            </li>
+            <li>
+              Порог лопания у зерна обычно обсуждают в районе <strong>~180&nbsp;°C</strong> — всё
+              равно грейте аккуратно и не оставляйте масло без присмотра.
+            </li>
+            <li>
+              Самый громкий «хруст» часто дают свежевзорванные бабочки; грибовидный специально
+              берут под тяжёлые глазури — см. раздел «Виды» выше.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section gallery-part" id="gallery">
+        <h2 class="section-title reveal">Галерея настроения</h2>
+        <p class="section-sub reveal">
+          Яркие иллюстрации в духе неонового кино — можно заменить на свои фото или AI-арты
+          (см. <code class="inline-code">public/images/README.txt</code>).
+        </p>
+        <div class="gallery-grid">
+          <figure class="gallery-item reveal wide">
+            <img src="/images/gallery-1.svg" alt="Стилизованный неоновый ведёрко попкорна" width="800" height="600" loading="lazy" />
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="/images/gallery-2.svg" alt="Градиентное небо и зёрна" width="800" height="600" loading="lazy" />
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="/images/gallery-3.svg" alt="Сочные зёрна на фиолетовом фоне" width="800" height="600" loading="lazy" />
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="/images/gallery-4.svg" alt="Неоновые пятна и кучка попкорна" width="800" height="600" loading="lazy" />
+          </figure>
+          <figure class="gallery-item reveal tall">
+            <img src="/images/gallery-5.svg" alt="Кинотеатральная рамка и золотой попкорн" width="800" height="600" loading="lazy" />
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer reveal" id="sources">
+      <p class="footer-title">Источники и дальше читать</p>
+      <ul class="footer-links">
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Popcorn" target="_blank" rel="noopener noreferrer"
+            >Wikipedia — Popcorn</a
+          >
+        </li>
+        <li>
+          <a href="https://www.popcorn.org" target="_blank" rel="noopener noreferrer"
+            >Popcorn.org</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.popcorn.org/All-About-Popcorn/History-of-Popcorn"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Popcorn.org — History</a
+          >
+        </li>
+        <li>
+          <a href="https://www.britannica.com/topic/popcorn" target="_blank" rel="noopener noreferrer"
+            >Britannica</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.scientificamerican.com/article/popcorn-the-ultimate-snack-may-have-truly-ancient-origins/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Scientific American</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.npr.org/sections/thesalt/2016/01/19/463634834/aztec-gold-watch-the-history-and-science-of-popcorn"
+            target="_blank"
+            rel="noopener noreferrer"
+            >NPR — The Salt</a
+          >
+        </li>
+        <li>
+          <a href="https://www.madehow.com/Volume-5/Popcorn.html" target="_blank" rel="noopener noreferrer"
+            >Made How — Popcorn</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.popcorngenius.com/popcorn/different-types-of-popcorn"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Popcorn Genius — виды попкорна</a
+          >
+        </li>
+      </ul>
+      <p class="footer-copy">Сделано с любовью к хрусту и анимации.</p>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
