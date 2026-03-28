@@ -6,6 +6,10 @@ on:
     branches: ['main']
   workflow_dispatch:
 
+# Actions на Node 24 (см. deprecation Node 20 на runner’ах)
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 permissions:
   contents: read
   pages: write
@@ -27,10 +31,16 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: '24'
           cache: 'npm'
       - name: Install dependencies
-        run: npm ci
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci --no-audit --fund=false
+          else
+            echo "::warning::package-lock.json не в репозитории — выполняется npm install (лучше закоммитить lock-файл)"
+            npm install --no-audit --fund=false
+          fi
       - name: Build
         run: npm run build
       - name: Setup Pages
