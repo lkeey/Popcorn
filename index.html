@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/Popcorn/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Popcorn: records and US states, traditions, kernel varieties, production, cinema, global flavors, storage tips — with scroll effects and our signature Cyber-Pop recipe."
+    />
+    <title>Popcorn — Varieties, Cinema, Flavors, Records & Stories</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Unbounded:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/Popcorn/assets/index-051175f6.js"></script>
+    <link rel="stylesheet" href="/Popcorn/assets/index-4b543558.css">
+  </head>
+  <body>
+    <div class="parallax-root" aria-hidden="true">
+      <div class="parallax-base"></div>
+      <div
+        class="parallax-layer parallax-layer--deep"
+        data-parallax-depth="0.045"
+        data-parallax-mouse="10"
+      ></div>
+      <div
+        class="parallax-layer parallax-layer--mid"
+        data-parallax-depth="0.11"
+        data-parallax-mouse="18"
+      ></div>
+      <div
+        class="parallax-layer parallax-layer--front"
+        data-parallax-depth="0.2"
+        data-parallax-mouse="26"
+      ></div>
+    </div>
+    <div class="noise" aria-hidden="true"></div>
+    <div id="popcorn-layer" class="popcorn-layer" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="site-header__row">
+        <a href="#top" class="logo logo--shimmer"
+          >POP<span class="logo-dot">.</span>CORN</a
+        >
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul class="site-nav__list">
+            <li><a href="#facts" class="site-nav__link">Facts</a></li>
+            <li><a href="#varieties" class="site-nav__link">Varieties</a></li>
+            <li><a href="#cinema" class="site-nav__link">Cinema</a></li>
+            <li><a href="#flavors" class="site-nav__link">Flavors</a></li>
+            <li><a href="#recipe" class="site-nav__link">Recipe</a></li>
+            <li><a href="#story" class="site-nav__link">Story</a></li>
+            <li><a href="#tips" class="site-nav__link">Tips</a></li>
+            <li><a href="#world" class="site-nav__link">World</a></li>
+            <li><a href="#gallery" class="site-nav__link">Gallery</a></li>
+            <li><a href="#sources" class="site-nav__link">Links</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="read-progress" aria-hidden="true">
+        <div class="read-progress__bar" id="read-progress-bar"></div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero reveal" id="top">
+        <p class="hero-kicker">Ancient Snack · Science · Cinema</p>
+        <h1 class="hero-title">
+          An Explosion on <span class="gradient-text">Full Screen</span>
+        </h1>
+        <p class="hero-lead">
+          One of America's oldest snacks — and the perfect reason to add a little
+          theatrical flair to your everyday scroll.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#gallery">View Gallery</a>
+          <button type="button" class="btn btn-ghost" id="demo-burst" aria-label="Show popcorn effect">
+            Popcorn Burst
+          </button>
+        </div>
+        <div class="hero-badge">
+          <span aria-hidden="true">🍿</span>
+          Popping for Millennia
+        </div>
+      </section>
+
+      <section class="section facts" id="facts">
+        <h2 class="section-title reveal">Facts That Crunch</h2>
+        <div class="cards">
+          <article class="card glass reveal">
+            <span class="card-icon" aria-hidden="true">🏜️</span>
+            <h3>Ancient Origins</h3>
+            <p>
+              Discoveries in Bat Cave, New Mexico: kernels approximately four thousand years old,
+              some of which could still "pop." In Peru, there's evidence of popcorn from thousands
+              of years ago.
+            </p>
+          </article>
+          <article class="card glass reveal">
+            <span class="card-icon" aria-hidden="true">🌋</span>
+            <h3>The Science</h3>
+            <p>
+              Each kernel is a mini pressure cooker: moisture content of 14–20% turns to steam,
+              pressure ruptures the hull, and starch expands into foam. Volume can increase dozens
+              of times — hence the characteristic "pop."
+            </p>
+          </article>
+          <article class="card glass reveal">
+            <span class="card-icon" aria-hidden="true">🎭</span>
+            <h3>Culture</h3>
+            <p>
+              The Aztecs used popcorn in ceremonies and decorations. There's a word like
+              <em>totopoca</em> — "the sound of popping kernels." Early chroniclers described
+              popcorn in Mesoamerica and South America.
+            </p>
+          </article>
+          <article class="card glass reveal">
+            <span class="card-icon" aria-hidden="true">🎬</span>
+            <h3>Modern Era</h3>
+            <p>
+              Mobile popping machines appeared in the 1880s (Chicago, Charles Cretors), and cinema
+              made popcorn a theater icon. It was even once eaten for breakfast — like cereal, but
+              more fun.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section varieties" id="varieties">
+        <h2 class="section-title reveal">Types and Shapes</h2>
+        <p class="section-sub reveal">
+          The descriptions below summarize common industry and popular sources:
+          the "burst" shape greatly influences how popcorn is transformed in kitchens and
+          factories.
+        </p>
+        <div class="cards cards--feature">
+          <article class="card glass reveal card--wide">
+            <span class="card-icon" aria-hidden="true">🦋</span>
+            <h3>Butterfly (Snowflake)</h3>
+            <p>
+              Irregular, delicate shape with "wings" — better at holding butter, spices, and dry
+              seasonings. Light, airy, crispy: the most recognizable texture of movie theaters and
+              home stovetops.
+            </p>
+          </article>
+          <article class="card glass reveal card--wide">
+            <span class="card-icon" aria-hidden="true">🍄</span>
+            <h3>Mushroom</h3>
+            <p>
+              Dense sphere with rounded cap — withstands heavy glazes without crumbling:
+              caramel, chocolate, cheese powders, glazed mixes, and candy on a stick.
+            </p>
+          </article>
+        </div>
+        <div class="cards cards--compact">
+          <article class="card glass card--small reveal">
+            <h3>Yellow Kernels</h3>
+            <p>The most common "theater" variety: large, familiar, convenient for mass popping.</p>
+          </article>
+          <article class="card glass card--small reveal">
+            <h3>White Kernels</h3>
+            <p>
+              Often smaller and more delicate; after popping gives a light, almost "snowy" appearance
+              and mild flavor.
+            </p>
+          </article>
+          <article class="card glass card--small reveal">
+            <h3>Colored Kernels</h3>
+            <p>
+              Red, blue, purple hulls — decorative before popping; the actual popped corn is usually
+              light, with differences mainly in crunch and variety aroma.
+            </p>
+          </article>
+          <article class="card glass card--small reveal">
+            <h3>Hulless & Ladyfinger</h3>
+            <p>
+              Varieties with less intrusive hulls and small kernels — convenient for those irritated
+              by skins, and for delicate coatings.
+            </p>
+          </article>
+        </div>
+        <p class="section-sub section-sub--link reveal">
+          About air-popped, stovetop, microwave, and factory methods —
+          <a href="#how-its-made">how popcorn is made</a> (separate section below, not in menu).
+        </p>
+      </section>
+
+      <section class="section how-made" id="how-its-made">
+        <h2 class="section-title reveal">How Popcorn is Made</h2>
+        <p class="section-sub reveal">
+          Industry and home kitchens use the same principle: moisture inside the kernel turns to
+          steam and bursts the pericarp. Below is a generalized process based on open articles and
+          encyclopedias.
+        </p>
+        <div class="prose glass reveal">
+          <p>
+            Almost always about corn subspecies <strong><em>Zea mays everta</em></strong>:
+            a hard hull holds pressure until the "pop." Raw material is cleaned and moisture
+            is adjusted to the working range — approximately <strong>13–20%</strong> depending on
+            method and production line.
+          </p>
+          <ul class="prose-list">
+            <li>
+              <strong>Air-Popped.</strong> Heated air circulates in a chamber or drum;
+              oil during popping is optional — easier to fine-tune salt, oil, and
+              flavorings afterward.
+            </li>
+            <li>
+              <strong>Kettle and Stovetop.</strong> Heat through fat or oil — quick home and
+              street classic; flavor is richer, calories higher.
+            </li>
+            <li>
+              <strong>Microwave Bags.</strong> Inside — kernels and fat/flavorings; often
+              includes a <strong>susceptor</strong> (absorbs microwaves and heats like a contact
+              pad). Factories adjust kernel moisture for microwave production, typically
+              <strong>13–14%</strong> for microwave lines.
+            </li>
+            <li>
+              <strong>Factory.</strong> Multiple lines (often hours of continuous operation),
+              monitoring moisture, salt, texture, and batch stability.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section cinema" id="cinema">
+        <h2 class="section-title reveal">Popcorn and Cinema</h2>
+        <p class="section-sub reveal">
+          Theater snacks have long ceased to be mere "ticket supplements": various cinema industry
+          sources repeat the idea that drinks and concessions often bring theaters the lion's share
+          of margin compared to ticket sales alone.
+        </p>
+        <div class="cards">
+          <article class="card glass reveal">
+            <span class="card-icon" aria-hidden="true">🎟️</span>
+            <h3>Ticket & Concessions</h3>
+            <p>
+              Popcorn and drinks sell with a markup for convenience and experience; exact percentages
+              vary by chain and country, but the image of "making money on popcorn" is rooted precisely
+              in this revenue structure.
+            </p>
+          </article>
+          <article class="card glass reveal">
+            <span class="card-icon" aria-hidden="true">📉</span>
+            <h3>Great Depression</h3>
+            <p>
+              In the US during the 1930s, popcorn remained a relatively affordable pleasure amid
+              hardship: a cheap snack in theaters and on streets cemented the habit of "going to the
+              movies and getting a bucket" — popular historical accounts link this to sustained demand.
+            </p>
+          </article>
+          <article class="card glass reveal">
+            <span class="card-icon" aria-hidden="true">🥤</span>
+            <h3>Today's Theater</h3>
+            <p>
+              Formats have become pricier, but the "screening + something crunchy" pairing remains a
+              marketing anchor: combos, seasonal flavors, and collectible cups — ways to keep guests
+              at concessions, not just at the screen.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section flavors" id="flavors">
+        <h2 class="section-title reveal">Around the World by Taste</h2>
+        <p class="section-sub reveal">
+          Flavor traditions blend with global retail — below is not a complete atlas, but
+          orientation points travelers and packaged mix enthusiasts often encounter.
+        </p>
+        <div class="cards cards--compact">
+          <article class="card glass card--small reveal">
+            <h3>Kettle Corn</h3>
+            <p>
+              Sweet-salty profile from open-air stalls and fairs in the US — whipped sugar and salt
+              in hot oil create a characteristic crust.
+            </p>
+          </article>
+          <article class="card glass card--small reveal">
+            <h3>Chili & Lime</h3>
+            <p>
+              In Latin America and street food, generous sprinkles of smoked pepper, lime, and
+              cheese powders are common — acidity balances the fat.
+            </p>
+          </article>
+          <article class="card glass card--small reveal">
+            <h3>Asia</h3>
+            <p>
+              Retail features caramel-milk, wasabi, "sea" umami, sweet kernels with syrups —
+              local lines mimic region's familiar snacks.
+            </p>
+          </article>
+          <article class="card glass card--small reveal">
+            <h3>Europe</h3>
+            <p>
+              Sweet glazes and dessert mixes coexist with familiar salted "cinema" variety;
+              often smaller portions, greater emphasis on aroma.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section recipe-part" id="recipe">
+        <h2 class="section-title reveal">Cyber-Pop: Neon Yuzu & Nori</h2>
+        <p class="section-sub reveal">
+          Our signature recipe — a gastronomic experience that transforms cinema snacking into
+          fine dining. Sweet yuzu caramel meets salty umami in a neon-green explosion of flavor.
+        </p>
+        
+        <div class="recipe-hero reveal">
+          <figure class="recipe-hero-image">
+            <img src="/Popcorn/images/cyber-pop-hero.png" alt="Cyber-Pop Neon Yuzu & Nori popcorn bucket in neon Tokyo street" width="1200" height="800" loading="lazy" />
+          </figure>
+        </div>
+
+        <div class="cards">
+          <article class="card glass reveal">
+            <span class="card-icon" aria-hidden="true">🌽</span>
+            <h3>Ingredients</h3>
+            <p><strong>Corn Kernels:</strong> 1/2 cup (preferably "Mushroom" kernels, as they pop into round shapes perfect for coating)</p>
+            <p><strong>Oil:</strong> Coconut or vegetable oil for popping</p>
+            <p><strong>For Yuzu Caramel:</strong> 1 cup sugar, 50g (3.5 tbsp) butter, 1 tsp baking soda, 2 tbsp yuzu juice (can substitute with lemon and tangerine juice mix)</p>
+            <p><strong>For "Neon" Powder:</strong> 2 sheets nori seaweed, 1 tsp matcha powder, pinch of sea salt</p>
+          </article>
+
+          <article class="card glass reveal card--wide">
+            <span class="card-icon" aria-hidden="true">👨‍🍳</span>
+            <h3>Instructions</h3>
+            <div class="recipe-steps">
+              <div class="recipe-step">
+                <strong>1. The Base:</strong> Pop the corn in oil. Transfer to a large bowl and remove any unpopped kernels.
+              </div>
+              <div class="recipe-step">
+                <strong>2. The Powder:</strong> Using a blender or coffee grinder, pulverize the nori sheets, matcha, and salt into a fine green dust.
+              </div>
+              <div class="recipe-step">
+                <strong>3. The Caramel:</strong> Melt the sugar over medium heat until it reaches an amber color. Remove from heat, carefully stir in the butter and yuzu juice. Finally, add the baking soda (the caramel will bubble and foam up—this is normal and makes it airy).
+              </div>
+              <div class="recipe-step">
+                <strong>4. The Assembly:</strong> Quickly pour the caramel over the popcorn and toss thoroughly with a silicone spatula to coat every single kernel.
+              </div>
+              <div class="recipe-step">
+                <strong>5. The Finale:</strong> While the caramel is still warm and sticky, generously sprinkle the popcorn with the green umami powder. Spread it out on parchment paper to cool completely.
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section story-part" id="story">
+        <h2 class="section-title reveal">The Story Behind Cyber-Pop</h2>
+        <p class="section-sub reveal">
+          From concept to creation: the journey of transforming ordinary movie snacks into an
+          accessible luxury that rivals blockbuster special effects.
+        </p>
+
+        <div class="cards">
+          <article class="card glass reveal">
+            <span class="card-icon" aria-hidden="true">🎯</span>
+            <h3>The Vision</h3>
+            <p>
+              What is the purpose of a new popcorn recipe? Our goal is to transform the ordinary
+              act of snacking at the cinema into a true gastronomic experience. We are used to a
+              binary choice: sweet or salty. This product is designed to awaken the taste buds and
+              prove that street food or movie snacks can reach the level of fine dining.
+            </p>
+          </article>
+
+          <article class="card glass reveal">
+            <span class="card-icon" aria-hidden="true">⚡</span>
+            <h3>The Challenge</h3>
+            <p>
+              The main challenge was combining complex, conflicting flavors—the sweetness of
+              caramel, the acidity of citrus, and the salty "umami" of seaweed—without losing
+              popcorn's most crucial characteristic: the crunch. We had to find the perfect
+              balance between moisture and dry ingredients.
+            </p>
+          </article>
+
+          <article class="card glass reveal">
+            <span class="card-icon" aria-hidden="true">🔬</span>
+            <h3>Research & Development</h3>
+            <p>
+              During the research phase, we created flavor maps and analyzed trends in Asian
+              cuisine. Our first sketches focused heavily on the visual aspect; we wanted the
+              popcorn to look futuristic. We considered options with edible glitter and hot peppers,
+              but they turned out to be either too cliché or tasted too chemical.
+            </p>
+          </article>
+
+          <article class="card glass reveal">
+            <span class="card-icon" aria-hidden="true">💥</span>
+            <h3>Progress & Failures</h3>
+            <p>
+              The path to the perfect recipe wasn't easy. Our first major mistake was trying to
+              use liquid soy sauce to achieve the umami flavor. The result? The sauce instantly
+              soaked the popcorn, turning it into an inedible sponge. It was a complete failure.
+              Progress came when we realized that flavors need to be layered through textures:
+              the base crunch of the corn, a protective shell of airy yuzu caramel, and finally,
+              a dry powder of nori and matcha on top.
+            </p>
+          </article>
+
+          <article class="card glass reveal">
+            <span class="card-icon" aria-hidden="true">✨</span>
+            <h3>Final Advantages</h3>
+            <p>
+              The final version has three main advantages. First, the texture: the popcorn stays
+              extremely crispy for days thanks to the baking soda caramelization technique. Second,
+              the multidimensional flavor: it unfolds in stages (first the salty sea notes, then the
+              earthy matcha, ending with a sweet citrus finish). Third, the natural color: the
+              striking neon-green hue is achieved entirely without artificial food coloring.
+            </p>
+          </article>
+
+          <article class="card glass reveal">
+            <span class="card-icon" aria-hidden="true">🌍</span>
+            <h3>Cultural Impact</h3>
+            <p>
+              Popcorn is a global symbol of the entertainment industry. By creating such complex
+              flavor profiles, we elevate the standards of consumption within pop culture. This
+              product can make going to the movies or binge-watching a series at home a more mindful
+              and engaging experience. Cyber-Pop proves that the mass market doesn't have to be
+              primitive. The future of food in the entertainment world is accessible luxury that
+              impresses just as much as the special effects on a blockbuster screen.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section tips" id="tips">
+        <h2 class="section-title reveal">Freshness, Benefits & Myths</h2>
+        <p class="section-sub reveal">
+          A brief guide without medical promises: what happens to kernels after popping and how to
+          avoid common household misconceptions.
+        </p>
+        <div class="cards">
+          <article class="card glass reveal">
+            <span class="card-icon" aria-hidden="true">🫙</span>
+            <h3>Why It Goes Stale</h3>
+            <p>
+              After popping, starch and moisture in the foam restructure: in contact with air, flavor
+              becomes "flat," texture harder. Store in a tightly sealed container, away from stove and
+              light; add oil and salt just before eating if you want crispy freshness.
+            </p>
+          </article>
+          <article class="card glass reveal">
+            <span class="card-icon" aria-hidden="true">🌾</span>
+            <h3>About Nutrition</h3>
+            <p>
+              Air-popped popcorn itself is whole grain with fiber; few calories. It's another story
+              with butter, caramel, and glazes: they multiply energy value many times — check the
+              label of ready-made mixes.
+            </p>
+          </article>
+          <article class="card glass reveal">
+            <span class="card-icon" aria-hidden="true">🔍</span>
+            <h3>Myths</h3>
+            <p>
+              The "pop" is not GMO magic, but biology of the <em>Zea mays everta</em> variety and
+              moisture regime. Plain popcorn without additives is traditionally classified as
+              gluten-free grain; watch for gluten traces in flavored packets and on processing equipment.
+            </p>
+          </article>
+        </div>
+        <div class="prose glass reveal prose--tight">
+          <h3 class="prose-heading">Did You Know</h3>
+          <ul class="prose-list prose-list--plain">
+            <li>
+              In the US, <strong>January 19</strong> is often celebrated as National Popcorn Day — a
+              reason for promotions from producers and theaters.
+            </li>
+            <li>
+              Not all corn on the cob "pops": commercial popcorn comes from special varieties with
+              necessary hull and endosperm properties.
+            </li>
+            <li>
+              The popping threshold for kernels is usually discussed around <strong>~180°C</strong> —
+              still heat carefully and don't leave oil unattended.
+            </li>
+            <li>
+              The loudest "crunch" often comes from freshly popped butterfly; mushroom is
+              specifically chosen for heavy glazes — see "Varieties" section above.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section world-extra" id="world">
+        <h2 class="section-title reveal">States, Records & Daily Life</h2>
+        <p class="section-sub reveal">
+          A few more facts from open sources (media, record books, regional histories) —
+          to get a broader picture than just "a packet from the store."
+        </p>
+        <div class="cards">
+          <article class="card glass reveal">
+            <span class="card-icon" aria-hidden="true">🏛️</span>
+            <h3>Illinois & Symbolism</h3>
+            <p>
+              In various lists of official US state symbols, popcorn is listed as the
+              <strong>state snack food</strong> for Illinois — that is, a snack with "official"
+              status at the state level (as a memorial sign of regional culture, not a legal recipe
+              for every kitchen).
+            </p>
+          </article>
+          <article class="card glass reveal">
+            <span class="card-icon" aria-hidden="true">🌽</span>
+            <h3>Nebraska & Volume</h3>
+            <p>
+              Nebraska is often called one of the main players in popcorn cultivation in the US;
+              industry reviews suggest that the lion's share of American raw material for popping
+              kernels comes from several Great Plains states — Nebraska among them.
+            </p>
+          </article>
+          <article class="card glass reveal">
+            <span class="card-icon" aria-hidden="true">🥇</span>
+            <h3>Giant Balls</h3>
+            <p>
+              In Sac City, Iowa, communities have repeatedly assembled huge edible "balls" from
+              popcorn, sugar, and syrup; press and local records featured masses on the order of
+              <strong>several tons</strong> and hundreds of volunteers. Exact figures vary by year —
+              the point is the scale of a city festival, not a home bowl.
+            </p>
+          </article>
+          <article class="card glass reveal">
+            <span class="card-icon" aria-hidden="true">🎄</span>
+            <h3>Garlands & Decor</h3>
+            <p>
+              In American tradition, popcorn strings (sometimes with cranberries) have been and are
+              used as handmade holiday decor — cheap, festive, and in the DIY spirit.
+            </p>
+          </article>
+          <article class="card glass reveal">
+            <span class="card-icon" aria-hidden="true">👨‍🌾</span>
+            <h3>From Agronomist to Brand</h3>
+            <p>
+              The story of <strong>Orville Redenbacher</strong> is an example of how agronomic work
+              with hybrids and kernel quality turned into a recognizable brand of microwave and
+              cinema popcorn in the US.
+            </p>
+          </article>
+          <article class="card glass reveal">
+            <span class="card-icon" aria-hidden="true">♻️</span>
+            <h3>Packaging</h3>
+            <p>
+              Microwave bags are often multilayered (paper and film, susceptor) — harder to recycle
+              than a simple cup; if ecology matters, look for local disposal instructions and
+              options without excess packaging.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section gallery-part" id="gallery">
+        <h2 class="section-title reveal">Mood Gallery</h2>
+        <p class="section-sub reveal">
+          Vibrant neon cinema-style illustrations — you can replace with your own photos or AI art
+          (see <code class="inline-code">public/images/README.txt</code>).
+        </p>
+        <div class="gallery-grid">
+          <figure class="gallery-item reveal wide">
+            <img src="/Popcorn/images/gallery-1.svg" alt="Stylized neon popcorn bucket" width="800" height="600" loading="lazy" />
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="/Popcorn/images/gallery-2.svg" alt="Gradient sky and kernels" width="800" height="600" loading="lazy" />
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="/Popcorn/images/gallery-3.svg" alt="Juicy kernels on purple background" width="800" height="600" loading="lazy" />
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="/Popcorn/images/gallery-4.svg" alt="Neon spots and popcorn pile" width="800" height="600" loading="lazy" />
+          </figure>
+          <figure class="gallery-item reveal tall">
+            <img src="/Popcorn/images/gallery-5.svg" alt="Cinema frame and golden popcorn" width="800" height="600" loading="lazy" />
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer reveal" id="sources">
+      <p class="footer-title">Sources & Further Reading</p>
+      <ul class="footer-links">
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Popcorn" target="_blank" rel="noopener noreferrer"
+            >Wikipedia — Popcorn</a
+          >
+        </li>
+        <li>
+          <a href="https://www.popcorn.org" target="_blank" rel="noopener noreferrer"
+            >Popcorn.org</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.popcorn.org/All-About-Popcorn/History-of-Popcorn"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Popcorn.org — History</a
+          >
+        </li>
+        <li>
+          <a href="https://www.britannica.com/topic/popcorn" target="_blank" rel="noopener noreferrer"
+            >Britannica</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.scientificamerican.com/article/popcorn-the-ultimate-snack-may-have-truly-ancient-origins/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Scientific American</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.npr.org/sections/thesalt/2016/01/19/463634834/aztec-gold-watch-the-history-and-science-of-popcorn"
+            target="_blank"
+            rel="noopener noreferrer"
+            >NPR — The Salt</a
+          >
+        </li>
+        <li>
+          <a href="https://www.madehow.com/Volume-5/Popcorn.html" target="_blank" rel="noopener noreferrer"
+            >Made How — Popcorn</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.popcorngenius.com/popcorn/different-types-of-popcorn"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Popcorn Genius — Popcorn Types</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.statesymbolsusa.org/Illinois/snackfood_popcorn"
+            target="_blank"
+            rel="noopener noreferrer"
+            >State Symbols USA — Illinois Popcorn</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.guinnessworldrecords.com/world-records/largest-popcorn-ball"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Guinness — Largest Popcorn Ball</a
+          >
+        </li>
+      </ul>
+      <p class="footer-copy">Made with love for crunch and animation.</p>
+    </footer>
+
+    
+  </body>
+</html>
